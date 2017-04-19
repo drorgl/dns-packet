@@ -7,21 +7,27 @@
     "url": "https://github.com/mafintosh/dns-packet"
   },
   "dependencies": {
-    "ip": "^1.1.0",
-    "safe-buffer": "^5.0.1"
+    "@types/tape": "^4.2.29",
+    "ip": "drorgl/node-ip",
+    "ts-lint": "^4.5.1",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.2.2"
   },
   "devDependencies": {
     "standard": "^6.0.5",
     "tape": "^4.4.0"
   },
   "scripts": {
-    "test": "standard && tape test.js"
+    "install": "tsc",
+    "test": "tsc && ts-node tests/test.ts",
+    "tslint": "tslint -c tslint.json './src/**/*.ts' './tests/**/*.ts'"
   },
   "bugs": {
     "url": "https://github.com/mafintosh/dns-packet/issues"
   },
   "homepage": "https://github.com/mafintosh/dns-packet",
-  "main": "index.js",
+  "main": "./dist/dns-packet.js",
+  "types": "./dist/dns-packet.d.ts",
   "keywords": [
     "dns",
     "packet",
