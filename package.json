@@ -1,10 +1,13 @@
 {
   "name": "dns-packet",
   "version": "1.1.1",
+  "contributors": [
+    "Dror Gluska <drorgl@yahoo.com>"
+  ],
   "description": "An abstract-encoding compliant module for encoding / decoding DNS packets",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mafintosh/dns-packet"
+    "url": "https://github.com/drorgl/dns-packet"
   },
   "dependencies": {
     "@types/tape": "^4.2.29",
@@ -23,9 +26,9 @@
     "tslint": "tslint -c tslint.json './src/**/*.ts' './tests/**/*.ts'"
   },
   "bugs": {
-    "url": "https://github.com/mafintosh/dns-packet/issues"
+    "url": "https://github.com/drorgl/dns-packet/issues"
   },
-  "homepage": "https://github.com/mafintosh/dns-packet",
+  "homepage": "https://github.com/drorgl/dns-packet",
   "main": "./dist/dns-packet.js",
   "types": "./dist/dns-packet.d.ts",
   "keywords": [
