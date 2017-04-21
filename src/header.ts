@@ -10,7 +10,7 @@ export interface IQuestion {
 
 export interface IHeaderRecord {
 	id?: number;
-	type: string;
+	type?: string;
 	flags?: number;
 	questions?: IQuestion[];
 	answers?: IAnswer[];

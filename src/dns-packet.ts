@@ -1,4 +1,5 @@
 import * as header from "./header";
+export import header = header;
 
 interface IRec {
 	encode?: (n: string, buf: Buffer, offset: number) => void;
